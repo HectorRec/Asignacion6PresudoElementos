@@ -1,0 +1,95 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+main {
+    padding: 2rem;
+}
+section {
+    margin-bottom: 2rem;
+}
+
+
+a:active {
+    color: red;
+}
+a:hover {
+    color: blue;
+}
+input:checked {
+    outline: 2px solid green;
+}
+input:disabled {
+    background-color: #ccc;
+}
+p:empty {
+    border: 1px dashed red;
+}
+input:focus {
+    outline: 2px solid orange;
+}
+
+
+p:only-child {
+    background-color: #e0ffe0;
+}
+input:out-of-range {
+    border: 2px solid red;
+}
+input:read-only {
+    background-color: #f0f0f0;
+}
+input:required {
+    border: 2px solid blue;
+}
+#target-example:target {
+    background-color: yellow;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+p:lang(it) {
+    font-style: italic;
+}
+p:last-child {
+    font-weight: bold;
+}
+p:not(.not-example) {
+    color: gray;
+}
+p:nth-child(3) {
+    background-color: #ffe0e0;
+}
+
+
+.before-example::before {
+    content: "👉 ";
+    color: green;
+}
+.after-example::after {
+    content: " 🔥";
+    color: red;
+}
+.first-line-example::first-line {
+    font-weight: bold;
+    color: blue;
+}
+.first-letter-example::first-letter {
+    font-size: 2rem;
+    color: purple;
+}
+.selection-example::selection {
+    background-color: yellow;
+    color: black;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Pseudoclases y Pseudoelementos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ejemplos de Pseudoclases y Pseudoelementos</h1>
+    </header>
+    <main>
+     
+        <section>
+            <h2>Primera diapositiva</h2>
+            <p><a href="#active-link" class="active-link">Link activo (hover/click)</a></p>
+            <form>
+                <label>
+                    <input type="checkbox" id="check-me" checked> Checkeado
+                </label>
+                <br>
+                <input type="text" placeholder="Habilitado">
+                <br>
+                <input type="text" placeholder="Deshabilitado" disabled>
+                <br>
+                <p></p> 
+                <input type="text" id="focus-input" placeholder="Haz clic aquí">
+            </form>
+        </section>
+
+ 
+        <section>
+            <h2>Segunda diapositiva</h2>
+            <p id="only-child-example">Soy hijo único</p>
+            <form>
+                <input type="text" placeholder="Opcional">
+                <input type="number" min="10" max="20" value="25" id="out-of-range">
+                <input type="text" value="Lectura" readonly>
+                <input type="text" placeholder="Requerido" required>
+            </form>
+            <div id="target-example">
+                <p><a href="#target-example">Enlace al objetivo (target)</a></p>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>Tercera diapositiva</h2>
+            <form>
+                <input type="email" placeholder="Inválido si vacío">
+                <p lang="it">Paragrafo in italiano</p>
+                <p class="last-child-example">Soy el último hijo</p>
+                <p>Parágrafo final</p>
+                <p class="not-example">No soy un parágrafo común</p>
+                <p>Soy el tercer hijo de mi padre</p>
+                <p>Soy el único de mi tipo</p>
+            </form>
+        </section>
+
+
+        <section>
+            <h2>Ejemplos de Pseudoelementos</h2>
+            <p class="before-example">Texto con un pseudoelemento ::before</p>
+            <p class="after-example">Texto con un pseudoelemento ::after</p>
+            <p class="first-line-example">Esto es un ejemplo de pseudoelemento ::first-line aplicado a este párrafo para cambiar su primera línea.</p>
+            <p class="first-letter-example">Esto es un ejemplo de pseudoelemento ::first-letter aplicado a este párrafo para cambiar su primera letra.</p>
+            <p class="selection-example">Selecciona este texto para ver el efecto de ::selection.</p>
+        </section>
+    </main>
+</body>
+</html>
